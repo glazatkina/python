@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>698</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Обмен данными</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabDB">
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <attribute name="title">
+        <string>Базы данных</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Библиотека условных знаков оперативной обстановки</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="1" column="0" colspan="3">
+            <widget class="QTableView" name="tableViewServerDB1">
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="3">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>&lt;h2&gt;Доступны для скачивания</string>
+             </property>
+             <property name="buddy">
+              <cstring>tableViewServerDB1</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="btnOpenFolderDB1">
+             <property name="text">
+              <string>Открыть папку</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QPushButton" name="btnRefreshDB1">
+             <property name="text">
+              <string>Обновить</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="3">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>&lt;h3&gt;Доступны локально:</string>
+             </property>
+             <property name="buddy">
+              <cstring>tableViewLocalDB1</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QPushButton" name="btnDeleteAllDB1">
+             <property name="text">
+              <string>Удалить всё</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="3">
+            <widget class="QTableView" name="tableViewLocalDB1">
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <property name="sortingEnabled">
+              <bool>true</bool>
+             </property>
+             <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+              <bool>true</bool>
+             </attribute>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>Информационная база войск</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0" colspan="3">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>&lt;h2&gt;Доступны для скачивания</string>
+             </property>
+             <property name="buddy">
+              <cstring>tableViewServerDB2</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="3">
+            <widget class="QTableView" name="tableViewServerDB2">
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="3">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>&lt;h3&gt;Доступны локально:</string>
+             </property>
+             <property name="buddy">
+              <cstring>tableViewLocalDB2</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="3">
+            <widget class="QTableView" name="tableViewLocalDB2">
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="btnOpenFolderDB2">
+             <property name="text">
+              <string>Открыть папку</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QPushButton" name="btnRefrechDB2">
+             <property name="text">
+              <string>Обновить</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QPushButton" name="btnDeleteAllDB2">
+             <property name="text">
+              <string>Удалить всё</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabGIS">
+       <attribute name="title">
+        <string>Геоинформация</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="5" column="1">
+         <widget class="QPushButton" name="btnRefreshDB1_2">
+          <property name="text">
+           <string>Обновить</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="3">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>&lt;h3&gt;Доступны локально:</string>
+          </property>
+          <property name="buddy">
+           <cstring>tableViewLocalDB1</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="QTableView" name="tableViewServerDB1_2">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="3">
+         <widget class="QTableView" name="tableViewLocalDB1_2">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="3">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>&lt;h2&gt;Доступны для скачивания</string>
+          </property>
+          <property name="buddy">
+           <cstring>tableViewServerDB1</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QPushButton" name="btnDeleteAllDB1_2">
+          <property name="text">
+           <string>Удалить всё</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QPushButton" name="btnOpenFolderDB1_2">
+          <property name="text">
+           <string>Открыть папку</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>698</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Меню</string>
+    </property>
+    <addaction name="actionConnectDB"/>
+    <addaction name="actionCheckUpdates"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="accessibleName">
+    <string/>
+   </property>
+  </widget>
+  <action name="actionCheckUpdates">
+   <property name="text">
+    <string>Проверить обновления</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Справка</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="actionConnectDB">
+   <property name="text">
+    <string>Подключиться к базе</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tableViewServerDB1</tabstop>
+  <tabstop>tableViewLocalDB1</tabstop>
+  <tabstop>btnOpenFolderDB1</tabstop>
+  <tabstop>btnRefreshDB1</tabstop>
+  <tabstop>btnDeleteAllDB1</tabstop>
+  <tabstop>tableViewServerDB2</tabstop>
+  <tabstop>tableViewLocalDB2</tabstop>
+  <tabstop>btnOpenFolderDB2</tabstop>
+  <tabstop>btnRefrechDB2</tabstop>
+  <tabstop>btnDeleteAllDB2</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
